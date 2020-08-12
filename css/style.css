@@ -461,11 +461,14 @@ footer{
 .footer ul li:focus{
     background-color: var(--accent-color);
 }
+.flex-icon{
+    display: flex;
+}
 .social-link.instagram{
     display: inline-block;
     width:44px;
     height: 44px;
-    background-image: url(../img/instagram.svg);
+    
     background-color:rgba(255, 255, 255, 0.1);;
     background-size: 20px;
     background-repeat: no-repeat;
@@ -476,7 +479,7 @@ footer{
     display: inline-block;
     width:44px;
     height: 44px;
-    background-image: url(../img/twitter.svg);
+    
     background-color:rgba(255, 255, 255, 0.1);
     background-size: 20px;
     background-repeat: no-repeat;
@@ -487,7 +490,7 @@ footer{
     display: inline-block;
     width:44px;
     height: 44px;
-    background-image: url(../img/fb.svg);
+   
     background-color:rgba(255, 255, 255, 0.1);;
     background-size: 10px 20px;
     background-repeat: no-repeat;
@@ -498,7 +501,7 @@ footer{
     display: inline-block;
     width:44px;
     height: 44px;
-    background-image: url(../img/linkedin.svg);
+    
     background-color:rgba(255, 255, 255, 0.1);;
     background-size: 20px;
     background-repeat: no-repeat;
