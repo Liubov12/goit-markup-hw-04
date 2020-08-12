@@ -189,7 +189,7 @@ ul{
     margin-right: auto;
    
 }
-
+/*  не срабатывает код на иконки соц.сетей  */
 .flex-icon{
     display: flex;
     padding-left: 32px;
