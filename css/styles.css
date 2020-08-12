@@ -189,8 +189,45 @@ ul{
     margin-right: auto;
    
 }
+
 .flex-icon{
     display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.flex-ico.pic{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.1);
+}
+.icon {
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    fill:currentColor
+}
+.team.pic:hover,
+.team.pic:focus{
+    background-color: var(--accent-color);
+    color:var(--white-color)
+}
+.icon:last-child{
+    margin-right: 0px;
+}
+.flex-iconli+li{
+    margin-left: 10px;
+}
+.social-link{
+    margin-top: 20px;
+}
+.social-link li+li{
+    margin-left: 10px;
 }
 
 /* banner */

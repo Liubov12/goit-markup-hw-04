@@ -453,67 +453,16 @@ footer{
     margin-right: 155px;
     margin-bottom: 36px;
 }
-.social{
-    display: flex;
-    
-}
+
 .footer ul li:hover,
 .footer ul li:focus{
     background-color: var(--accent-color);
 }
-.flex-icon{
-    display: flex;
-}
-.social-link.instagram{
-    display: inline-block;
-    width:44px;
-    height: 44px;
-    
-    background-color:rgba(255, 255, 255, 0.1);;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.social-link.twitter{
-    display: inline-block;
-    width:44px;
-    height: 44px;
-    
-    background-color:rgba(255, 255, 255, 0.1);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.social-link.facebook{
-    display: inline-block;
-    width:44px;
-    height: 44px;
+
+
    
-    background-color:rgba(255, 255, 255, 0.1);;
-    background-size: 10px 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.social-link.linkedin{
-    display: inline-block;
-    width:44px;
-    height: 44px;
-    
-    background-color:rgba(255, 255, 255, 0.1);;
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.social{
-    margin-top: 20px;
-}
-.social li+li{
-    margin-left: 10px;
-}
+  
+
 .buttom-flex{
         margin-top: 72px;
         margin-bottom: 30px ;
