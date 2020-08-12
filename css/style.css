@@ -9,6 +9,9 @@
 html{
     box-sizing: border-box;
 }
+
+* { outline: 0; padding: 0; margin: 0; border: 0; }  
+*,
 *,
 *::before,
 *::after{
@@ -24,7 +27,8 @@ body{
 ul{
     margin-top: 0;
     margin-bottom: 0;
-    list-style:none 
+    list-style:none;
+    text-decoration: none
 }
 
 /* цвет основного текста #212121 */
@@ -144,6 +148,31 @@ color: var(--primery-text-color);
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+       
+}
+.mail{
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(../img/mail.svg);
+}
+.phone{
+    background-repeat: no-repeat;
+    background-image: url(../img/phone.svg);
+}
+.pin{
+    width: 16px;
+    height: 12px;
+    margin-left: 10px;
+
+}
+ .info a{
+
+    font-family: inherit;
+    
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--caption-color)
        
 }
 /* рассположение контента в heder */
@@ -424,8 +453,63 @@ footer{
     margin-right: 155px;
     margin-bottom: 36px;
 }
-.social-link{
+.social{
+    display: flex;
+    
+}
+.footer ul li:hover,
+.footer ul li:focus{
+    background-color: var(--accent-color);
+}
+.social-link.instagram{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/instagram.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.twitter{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/twitter.svg);
+    background-color:rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.facebook{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/fb.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.linkedin{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/linkedin.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social{
     margin-top: 20px;
+}
+.social li+li{
+    margin-left: 10px;
 }
 .buttom-flex{
         margin-top: 72px;

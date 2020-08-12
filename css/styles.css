@@ -11,6 +11,7 @@
 html{
     box-sizing: border-box;
 }
+* { outline: 0; padding: 0; margin: 0; border: 0; }  
 *,
 *::before,
 *::after{
@@ -255,6 +256,7 @@ ul{
     
     display:inline-block;
     width: 696px;
+    
     margin-bottom: 30px;
     margin-top: 0px;
     margin-right: auto;
@@ -290,6 +292,7 @@ ul{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    font-family: inherit;
 }
 
 .flex-element{
@@ -299,11 +302,13 @@ ul{
 }
 
 .flex-element.img{
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 .flex-element::before{
     content: "";
     margin-right: auto;
+    margin-bottom: 30px;
     margin-left: auto;
     width: 270px;
     height: 120px;
@@ -348,8 +353,12 @@ ul{
     text-transform: uppercase;
 }
 .text {
-    color: var(--title-text-color);
+    color: var(--caption-color);
     font-weight: 400;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 .feature-list .text {
     font-size: 14px;
@@ -397,26 +406,57 @@ ul{
     line-height: 1.19;
     text-align: center;
 }
-.flex-clients a {
-    color: var(--accent-color);
-}
-.social-link :hover,
-.social-link :focus {
-    background: var(--accent-color);
-}
-.social-link .instagram::before{
-    display: inline-block;
-    width:40px;
-    height: 40px;
-   
-    background-size: 20px;
-    background-image: url(../img/inst.svg);
-    background-color:rgba(255, 255, 255, 0.1);
+
+.flex-clients{
+    content: "";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 170px;
+    height: 90px;
+    display:block;
+ 
+    background-position: 50% 50%;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.icon-yaco{
+    background-image: url(../img/ya-co.svg);
+    margin-top: 19px;
+}  
+
+.tagline{
+    background-image: url(../img/tagline.svg);
+    margin-top: 24px;
+}
+.company{
+    background-image: url(../img/company.svg); 
+    margin-top: 24px;
+
+}
+.peters{
+    background-image: url(../img/peters.svg);
+    margin-top: 24px;
     
-    border-radius: 50%;
+}
+.brand{
+    background-image: url(../img/company-5.svg);
     
+    margin-top: 22px;
+  
+}
+.tag{
+    background-image: url(../img/company-6.svg);
+    margin-top: 22px;
+}
+.clients li:hover,
+.clients li :focus{
+    color:var(--accent-color)
 }
 
 
@@ -446,6 +486,29 @@ ul{
     margin-top: 94px;
     
     background-color: var(--background);
+}
+.section-team.instagram-team{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+}
+.icon{
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor:pointer;
+    fill:currentColor
+}
+
+.section-team.instagram-team:hover,
+.section-team.instagram-team:focus{
+    background-color: var(--accent-color)
 }
 /* flex team */
 .team ul{ 
@@ -507,6 +570,8 @@ ul{
     margin-top: 94px;
    
 }
+
+
 /* footer */
 footer{    
     background: #2F303A;
@@ -601,8 +666,64 @@ color:var(--accent-color);
     margin-right: 155px;
     margin-bottom: 36px;
 }
+
+.social{
+    display: flex;
+    
+}
+.link-flex ul li:hover,
+.link-flex ul li:focus{
+    background-color: var(--accent-color);
+}
+.social-link.instagram{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/instagram.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.twitter{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/twitter.svg);
+    background-color:rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.facebook{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/fb.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.linkedin{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/linkedin.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
 .social{
     margin-top: 20px;
+}
+.social li+li{
+    margin-left: 10px;
 }
 .buttom-flex{
         margin-top: 72px;
