@@ -189,6 +189,9 @@ ul{
     margin-right: auto;
    
 }
+.flex-icon{
+    display: flex;
+}
 
 /* banner */
 
