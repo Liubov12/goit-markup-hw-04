@@ -6,7 +6,7 @@
     --background-grey: #F5F4FA;
     --caption-color: #757575;
     --background:#F5F4FA;
-
+    --icon-color: #AFB1B8;
 }
 html{
     box-sizing: border-box;
@@ -127,12 +127,20 @@ ul{
 }
 .mail{
     display: flex;
-    background-repeat: no-repeat;
-    background-image: url(../img/mail.svg);
+    background-repeat: no-repeat; 
+      
+}
+.mail:hover,
+.mail:focus{
+    fill: var(--accent-color);
 }
 .phone{
-    background-repeat: no-repeat;
-    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat; 
+} 
+   
+.phone:hover,
+.phone:focus{
+    fill:var(--accent-color);
 }
 .pin{
     width: 16px;
@@ -157,6 +165,7 @@ ul{
     padding-left: 0px;
 }
 .phone-mail{
+    display: flex;
     margin-left: auto;
     color:var(--caption-color);
     padding-top: 32px;
@@ -189,46 +198,7 @@ ul{
     margin-right: auto;
    
 }
-/*  не срабатывает код на иконки соц.сетей  */
-.flex-icon{
-    display: flex;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-.flex-ico.pic{
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: rgba(255, 255, 255, 0.1);
-}
-.icon {
-    display: inline-block;
-    width:20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    fill:currentColor
-}
-.team.pic:hover,
-.team.pic:focus{
-    background-color: var(--accent-color);
-    color:var(--white-color)
-}
-.icon:last-child{
-    margin-right: 0px;
-}
-.flex-iconli+li{
-    margin-left: 10px;
-}
-.social-link{
-    margin-top: 20px;
-}
-.social-link li+li{
-    margin-left: 10px;
-}
+
 
 /* banner */
 
@@ -322,9 +292,9 @@ ul{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
     justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 94px;
+   
     margin-left: auto;
     margin-right: auto;
 }
@@ -333,6 +303,8 @@ ul{
     margin-left: auto;
     margin-right: auto;
     font-family: inherit;
+    padding-top: 94px;
+    padding-bottom: 94px ;
 }
 
 .flex-element{
@@ -383,6 +355,7 @@ ul{
     background: var(--accent-color);
 }
 .title {
+    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -405,6 +378,7 @@ ul{
     line-height: 1.71;
 }
 .section-title {
+    
     margin-bottom: 50px;
     font-family: 'Roboto';
     font-style: normal;
@@ -413,6 +387,7 @@ ul{
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px ;
 
     color:  var(--primary-text-color);
 }
@@ -421,9 +396,26 @@ ul{
     text-align: center;
     text-transform: uppercase;
 }
-/* team */
-.team .title {
-    
+/*  команда . иконки соц.сетей  */
+.flex-box { 
+    display: flex;
+    flex-wrap: wrap;
+    margin:-15px;
+    justify-content: center;
+}
+
+.flex-team{
+    text-align: center;
+    width: 270px;
+    margin: 15px;
+    margin-left: 0px;  
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.flex-team .name {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -433,6 +425,7 @@ ul{
     color: var(--primery-text-color);
 } 
 .team .caption{
+    
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -441,12 +434,75 @@ ul{
 
     color:var(--caption-color);
 }
-.team .text {
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
+
+.pic{
+  fill:var(--caption-color)
 }
 
+.flex-icon{
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+
+.icon {
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    fill:var(--icon-color)
+    
+}
+.icon:hover,
+.icon:focus{
+    fill:var(--white-color);
+    background-color: var(--accent-color);
+   
+
+}
+.social-link{
+    content: "";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    width: 44px;
+    height: 44px;
+    
+    border-radius: 50%;
+    background-color: var(--white-color);
+
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color);
+  
+}
+.team ul{ 
+   
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+
+.icon:last-child{
+    margin-right: 0px;
+}
+
+
+.social-link li+li{
+   
+    margin-left: 10px;
+}
+
+/* clients */
 .flex-clients{
     content: "";
     display:flex;
@@ -458,48 +514,58 @@ ul{
     margin-left: auto;
     width: 170px;
     height: 90px;
-    display:block;
+   
  
     background-position: 50% 50%;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
 }
+
 .icon-yaco{
     background-image: url(../img/ya-co.svg);
-    margin-top: 19px;
+    
+    
 }  
 
 .tagline{
     background-image: url(../img/tagline.svg);
-    margin-top: 24px;
+    
+    
 }
 .company{
     background-image: url(../img/company.svg); 
-    margin-top: 24px;
+  
+   
 
 }
 .peters{
     background-image: url(../img/peters.svg);
-    margin-top: 24px;
+    
+    
     
 }
 .brand{
     background-image: url(../img/company-5.svg);
     
-    margin-top: 22px;
+    
+  
   
 }
 .tag{
     background-image: url(../img/company-6.svg);
-    margin-top: 22px;
+  
+    background-repeat: no-repeat;
 }
-.clients li:hover,
-.clients li :focus{
-    color:var(--accent-color)
+.link-clients li:hover,
+.link-clients li :focus{
+   fill:var(--accent-color)
 }
 
-
+.flex-clients:hover,
+.flex-clients:focus{
+    fill:var(--accent-color)
+}
 .flex-container{
     width: 1200px;
     padding-left: 15px;
@@ -522,63 +588,12 @@ ul{
 }
 
 .section-team{
-    margin-bottom: 94px;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     
     background-color: var(--background);
 }
-.section-team.instagram-team{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
 
-}
-.icon{
-
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    cursor:pointer;
-    fill:currentColor
-}
-
-.section-team.instagram-team:hover,
-.section-team.instagram-team:focus{
-    background-color: var(--accent-color)
-}
-/* flex team */
-.team ul{ 
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-}
-.team{
-    margin-top: 94PX;
-    margin-bottom: 94PX;
-}
-.flex-box { 
-    display: flex;
-    flex-wrap: wrap;
-    margin:-15px;
-    justify-content: center;
-}
-
-.flex-team{
-    width: 270px;
-    margin: 15px;
-    margin-left: 0px;  
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    
-
-}
-
-/* clients */
 .test-container ul{ 
     width: 1200px;
     padding-left: 15px;
@@ -597,13 +612,7 @@ ul{
     margin: 15px;
     margin-left: 0px;   
 }
-.flex-clients :hover,
-.flex-clients :focus{
-    color:var(--accent-color)
-}
-.box-clients{
-    margin-bottom: 94px;
-}
+
 
 .section-clients{
     margin-bottom: 94px;

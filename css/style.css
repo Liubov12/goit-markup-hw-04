@@ -153,12 +153,21 @@ color: var(--primery-text-color);
 .mail{
     display: flex;
     background-repeat: no-repeat;
-    background-image: url(../img/mail.svg);
+   
 }
 .phone{
     background-repeat: no-repeat;
-    background-image: url(../img/phone.svg);
+    
 }
+.mail:hover,
+.mail:focus{
+    fill:var(--accent-color)
+}
+.phone:hover,
+.phone:focus{
+    fill:var(--accent-color)
+}
+.p
 .pin{
     width: 16px;
     height: 12px;
@@ -392,6 +401,60 @@ footer{
     color:var(--contact-footer-color);
     text-decoration: none;
 }
+.social{
+    display: flex;
+    
+}
+.social-link.instagram{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/instagram.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.twitter{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/twitter.svg);
+    background-color:rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.facebook{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/fb.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 10px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social-link.linkedin{
+    display: inline-block;
+    width:44px;
+    height: 44px;
+    background-image: url(../img/linkedin.svg);
+    background-color:rgba(255, 255, 255, 0.1);;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.social{
+    margin-top: 20px;
+}
+.social li+li{
+    margin-left: 10px;
+}
 .social:hover,
 .social:focus{
     color:var(--accent-color);
@@ -421,6 +484,7 @@ footer{
     text-transform: uppercase;
     color: var(--white-color);
 }
+
 .footer-title:hover,
 .footer-title:focus{
     color:var(--accent-color);
