@@ -90,15 +90,19 @@ ul{
 .header-menu{
     padding-top: 32px;
     padding-bottom: 32px;
-
+    text-decoration: none;
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-    
-   
+     
+}
+.header-menu{
+    display: flex;
+    margin-left: 85px;
+    padding-left: 0px;
 }
 .header-menu .link{
     font-family: inherit;
@@ -107,6 +111,9 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
+}
+.header-menu .item+.item {
+    margin-left: 50px;
 }
 .current{
     color:var(--accent-color)  
@@ -123,22 +130,9 @@ color: var(--primery-text-color);
     color:var(--accent-color)
 }
 
-/* общие войства контанктов */
-.mail:hover,
-.mail:focus{
-    color:var(--accent-color)
-}
 
-.mail{
-    color:var(--second-primery-text-color);
-}
-.phone:hover,
-.phone:focus{
-    color:var(--accent-color)
-}
-.phone{
-    color:var(--second-primery-text-color);
-}
+/* общие войства контанктов */
+
 .info{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -150,63 +144,54 @@ color: var(--primery-text-color);
     letter-spacing: 0.02em;
        
 }
-.mail{
-    display: flex;
-    background-repeat: no-repeat;
+ul{
+    margin: 0px;
+   }
    
-}
-.phone{
-    background-repeat: no-repeat;
-    
-}
-.mail:hover,
-.mail:focus{
-    fill:var(--accent-color)
-}
-.phone:hover,
-.phone:focus{
-    fill:var(--accent-color)
-}
-.p
+.contact-link{
+       color:var(--caption-color);
+       font-size: 14px;
+       text-decoration: none;
+       padding-top: 32px;
+       padding-bottom: 32px;
+   
+   }
 .pin{
-    width: 16px;
-    height: 12px;
-    margin-left: 10px;
-
-}
- .info a{
-
-    font-family: inherit;
-    
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color:var(--caption-color)
-       
-}
-/* рассположение контента в heder */
-.header-menu{
-    display: flex;
-    margin-left: 85px;
-    padding-left: 0px;
-}
+       width: 16px;
+       height: 12px;
+       margin-right: 10px;
+   
+   }
+   /* рассположение контента в heder */
+   
 .contacts{
-    display: flex;
-    
+       display: flex;
+       margin-left: 305px;
+   }
+.fcontacts:nth-child(1n){
+    margin-right: 30px;
 }
-.phone-mail{
-    margin-left: auto;
+   
+.contact-link:hover,
+.contact-link:focus{
+       color:var(--accent-color);
+       fill:var(--accent-color)
+   }
+.info{
+       fill:currentColor;
+ }
+.marg{
+   margin-right: 30px;
 }
-.header-menu .item+.item{
-    margin-left: 50px;
-}
-.contacts .info+.info{
-    margin-left: 50px;
-}
+   
+/* рассположение контента в heder */
 .auth-nav{
     display: flex;
-    align-items: center;}
-
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
 
 /* рассположение меню*/
 .menu.title{
@@ -235,24 +220,27 @@ ul.menu a {
     line-height: 1.6;
     text-align: center;
     color: var(--primery-text-color);
+    text-decoration: none;
 
 }
 ul.menu a:hover,
 ul.menu a:focus{
-    color:var(--accent-color)
+    color:var(--white-color);
+    background-color: #2196F3;
 }
 
 
-.menu .all{
-    background-color: var(--accent-color);
-    color: var(--white-color);
-}
+
 
 .menu .title+.title{
     margin-left: 8px;
 }
 .filters ul{
     justify-content: center;
+}
+.all{
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 .veb{
     background: #F5F4FA;
@@ -262,6 +250,22 @@ ul.menu a:focus{
     background: #F5F4FA;
     border-radius: 4px;
     
+}
+.design{
+    background: #F5F4FA;
+    border-radius: 4px;
+
+}
+.marketing{
+ 
+    background: #F5F4FA;
+    border-radius: 4px;
+
+}
+.menu li:hover,
+.menu li:focus{
+    color:white;
+    background: #2196F3;
 }
 .test-container { 
     width: 1200px;

@@ -113,69 +113,46 @@ ul{
 }
 
 /* общие войства контанктов */
-.mail:hover,
-.mail:focus{
-    color:var(--accent-color)
-}
 
-.phone:hover,
-.phone:focus{
-    color:var(--accent-color)
-}
 ul{
  margin: 0px;
 }
-.mail{
-    display: flex;
-    background-repeat: no-repeat; 
-      
-}
-.mail:hover,
-.mail:focus{
-    fill: var(--accent-color);
-}
-.phone{
-    background-repeat: no-repeat; 
-} 
-   
-.phone:hover,
-.phone:focus{
-    fill:var(--accent-color);
+
+.contact-link{
+    color:var(--caption-color);
+    font-size: 14px;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 .pin{
     width: 16px;
     height: 12px;
-    margin-left: 10px;
+    margin-right: 10px;
 
-}
- .info a{
-
-    font-family: inherit;
-    
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color:var(--caption-color)
-       
 }
 /* рассположение контента в heder */
 
 .contacts{
+    
     display: flex;
-    padding-left: 0px;
+    margin-left: 305px;
 }
-.phone-mail{
-    display: flex;
-    margin-left: auto;
-    color:var(--caption-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-family: inherit;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color:var(--caption-color)
-}  
 
+
+.contact-link:hover,
+.contact-link:focus{
+    color:var(--accent-color);
+    fill:var(--accent-color)
+}
+
+.marg{
+    margin-right: 30px;
+}
+.info{
+    fill:currentColor
+}
 
 .header-menu{
     display: flex;
@@ -185,12 +162,10 @@ ul{
     padding-bottom: 32px;
     
 }
-.header-menu .item+.item{
+.header-menu .item+.item {
     margin-left: 50px;
 }
-.contacts .info+.info{
-    margin-left: 50px;
-}
+
 .auth-nav{
     display: flex;
     align-items: center;
@@ -198,6 +173,7 @@ ul{
     margin-right: auto;
    
 }
+
 
 
 /* banner */
@@ -287,17 +263,7 @@ ul{
     margin-right: 10px;
 }
   
-.section{
-   
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
 
-    justify-content: center;
-   
-    margin-left: auto;
-    margin-right: auto;
-}
 .feature-list{
     display: flex;
     margin-left: auto;
@@ -309,20 +275,18 @@ ul{
 
 .flex-element{
     width: 270px;
+    height: 120px;
     margin: 15px;
+    
         
 }
 
-.flex-element.img{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 .flex-element::before{
     content: "";
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
-    width: 270px;
     height: 120px;
     display:block;
     background-size: contain;
@@ -330,21 +294,29 @@ ul{
     background-position: center;
     background-color:#F5F4FA;    
 }
-.icon-delivery::before{
+.icon-antenna::before{
     background-image: url(../img/antenna.svg);
+    background-size: 70px 70px;
+
 }
 .icon-clock:before{
     background-image: url(../img/clock.svg);
+   
+    background-size: 70px 70px;
+
+
 }
 .icon-comp::before{
     background-image: url(../img/comp.svg);
+    background-size: 70px 70px;
 }
 .icon-austr::before{
     background-image: url(../img/astronaut.svg);
+    background-size: 70px 70px;
 }
 /* main container */
 
-.section.skill{
+.section.skills{
    padding-top: 0px;
    padding-bottom: 0px;
    margin-top: 94px;
@@ -353,6 +325,7 @@ ul{
 .buttom:hover,
 .buttom:focus {
     background: var(--accent-color);
+    
 }
 .title {
     
@@ -360,6 +333,7 @@ ul{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    padding-bottom: 10px;
 }
 .feature-list .title {
     color: var(--primary-text-color);
@@ -379,7 +353,7 @@ ul{
 }
 .section-title {
     
-    margin-bottom: 50px;
+  
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
@@ -400,14 +374,16 @@ ul{
 .flex-box { 
     display: flex;
     flex-wrap: wrap;
-    margin:-15px;
+    margin:-30px;
     justify-content: center;
 }
-
+.flex-team:last-child{
+    margin-right: 0px;
+}
 .flex-team{
     text-align: center;
     width: 270px;
-    margin: 15px;
+    margin: 30px;
     margin-left: 0px;  
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -435,9 +411,7 @@ ul{
     color:var(--caption-color);
 }
 
-.pic{
-  fill:var(--caption-color)
-}
+
 
 .flex-icon{
     display: flex;
@@ -445,7 +419,11 @@ ul{
     padding-right: 32px;
 
 }
-
+.icon:hover,
+.icon:focus{
+    fill:var(--white-color);
+    background-color:var(--accent-color);
+}
 .icon {
     display: inline-block;
     width:20px;
@@ -455,13 +433,7 @@ ul{
     fill:var(--icon-color)
     
 }
-.icon:hover,
-.icon:focus{
-    fill:var(--white-color);
-    background-color: var(--accent-color);
-   
 
-}
 .social-link{
     content: "";
     display:flex;
@@ -483,6 +455,7 @@ ul{
 .social-link:hover,
 .social-link:focus{
     background-color: var(--accent-color);
+  
   
 }
 .team ul{ 
@@ -566,21 +539,15 @@ ul{
 .flex-clients:focus{
     fill:var(--accent-color)
 }
-.flex-container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    align-content: center;
-}
 
 .skill-list{
     display: flex;
-    margin:-15px;
+  
     
 }
 .flex-list{
     width: 370px;
-    margin: 15px;
+    margin: 30px;
     margin-left: 0px;  
 }
 .flex-list:nth-child(3n){
