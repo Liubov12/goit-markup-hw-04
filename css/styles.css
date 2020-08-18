@@ -97,6 +97,7 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
+    text-decoration: none;
 }
 .header-menu a:hover,
 .header-menu a:focus{
@@ -130,6 +131,7 @@ ul{
     width: 16px;
     height: 12px;
     margin-right: 10px;
+    vertical-align: middle;
 
 }
 /* рассположение контента в heder */
@@ -319,21 +321,29 @@ ul{
 .section.skills{
    padding-top: 0px;
    padding-bottom: 0px;
-   margin-top: 94px;
-   margin-bottom: 94px;
+   padding-top: 94px;
+   padding-bottom: 94px;
 }
 .buttom:hover,
 .buttom:focus {
     background: var(--accent-color);
     
 }
-.title {
-    
+.title-skill{
+    width: 370px;
+    height: 70px;
+    left: 215px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color:var(--white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 .feature-list .title {
     color: var(--primary-text-color);
@@ -426,6 +436,8 @@ ul{
 }
 .icon {
     display: inline-block;
+    vertical-align: middle
+    ;
     width:20px;
     height: 20px;
     margin-right: 10px;
@@ -582,8 +594,8 @@ ul{
 
 
 .section-clients{
-    margin-bottom: 94px;
-    margin-top: 94px;
+    padding-bottom: 94px;
+    padding-top: 94px;
    
 }
 
@@ -591,8 +603,8 @@ ul{
 /* footer */
 footer{    
     background: #2F303A;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .footer-logo:hover,
 .footer-logo:focus{
@@ -742,8 +754,8 @@ color:var(--accent-color);
     margin-left: 10px;
 }
 .buttom-flex{
-        margin-top: 72px;
-        margin-bottom: 30px ;
+    margin-top: 72px;
+    margin-bottom: 30px ;
 
 }
 
